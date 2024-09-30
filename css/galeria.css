@@ -1,0 +1,51 @@
+main {
+    opacity: 1;
+}
+
+aside {
+    flex-grow: 1;
+}
+
+article {
+    flex-grow: 6;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bigfoto {
+    display: block;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: black solid 5px;
+    border-radius: 1em;
+    background-color: white;
+    box-shadow: 0 4px 12px -1px rgba(0, 0, 0, 0.25), 0 2px 4px -1px rgba(0, 0, 0, 0.05);
+}
+
+.galeria img {
+    display: block;
+    padding: 10px;
+    margin: 15px 0.8em 0 0;
+    border: black solid 5px;
+    border-radius: 0.2em;
+    background-color: white;
+    box-shadow: 0 4px 12px -1px rgba(0, 0, 0, 0.25), 0 2px 4px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* KOD CSS NA ODWRÓCONE ROZJAŚNIENIE CIEMNEGO: */
+
+.galeria img {
+filter: brightness(30%);
+transition: filter 2s ease;
+
+}
+
+.galeria img:hover {
+filter: brightness(100%);
+transition: filter 2s ease;
+}
