@@ -163,13 +163,21 @@ header .socialNetworkNavBar .socialNetworkNav {
 header .socialNetworkNavBar .socialNetworkNav img:hover {
   opacity: 0.5;
 }
+/* line 148, main.scss */
+header .mainmenu {
+  list-style: none;
+}
+/* line 150, main.scss */
+header .mainmenu ul {
+  list-style: none;
+}
 
 /* Main Content sections */
-/* line 151, main.scss */
+/* line 157, main.scss */
 .mainContent {
   display: block;
 }
-/* line 153, main.scss */
+/* line 159, main.scss */
 .mainContent .section1 {
   display: block;
 }

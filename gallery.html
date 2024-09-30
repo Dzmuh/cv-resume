@@ -1,10 +1,41 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Gallery</title>
+    <meta charset="utf-8">
+	<title>Ilya Fralkou - Really Awesome Front-end Developer</title>
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    
+    <!-- Styles -->
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <link href="css/galeria.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+    <!-- Skrypty do gallery -->
+    <script src="js/preload.js"></script> 
+    <script src="js/galeria1.js"></script> 
+    <main>
+    <article>
+            <h3>Galeria zdjęć</h3>
+            <section>            
+                <img src="images/big/foto6.jpg" class="bigfoto" name="obrazek"/>
+            </section>
+            <section class="galeria">
+                <img onmouseover="document['obrazek'].src=f1.src;" onmouseout="document['obrazek'].src=f1.src;" src="images/mini/foto1.jpg"/>
+                <img onmouseover="document['obrazek'].src=f2.src;" onmouseout="document['obrazek'].src=f1.src;" src="images/mini/foto2.jpg"/>
+                <img onmouseover="document['obrazek'].src=f3.src;" onmouseout="document['obrazek'].src=f1.src;" src="images/mini/foto3.jpg"/>
+                <img onmouseover="document['obrazek'].src=f4.src;" onmouseout="document['obrazek'].src=f1.src;" src="images/mini/foto4.jpg"/>
+                <img onmouseover="document['obrazek'].src=f5.src;" onmouseout="document['obrazek'].src=f1.src;" src="images/mini/foto5.jpg"/>
+                <img onmouseover="document['obrazek'].src=f6.src;" onmouseout="document['obrazek'].src=f1.src;" src="images/mini/foto6.jpg"/>
+                <img onmouseover="document['obrazek'].src=f7.src;" onmouseout="document['obrazek'].src=f6.src;" src="images/mini/foto7.jpg"/>
+                <img onmouseover="document['obrazek'].src=f8.src;" onmouseout="document['obrazek'].src=f6.src;" src="images/mini/foto8.jpg"/>
+                <img onmouseover="document['obrazek'].src=f9.src;" onmouseout="document['obrazek'].src=f6.src;" src="images/mini/foto9.jpg"/>
+                <img onmouseover="document['obrazek'].src=f10.src;" onmouseout="document['obrazek'].src=f6.src;" src="images/mini/foto10.jpg"/>
+                <img onmouseover="document['obrazek'].src=f11.src;" onmouseout="document['obrazek'].src=f6.src;" src="images/mini/foto11.jpg"/>
+                <img onmouseover="document['obrazek'].src=f12.src;" onmouseout="document['obrazek'].src=f6.src;" src="images/mini/foto12.jpg"/>
+            </section>
+        </article>
+</main>
 </body>
 </html>
