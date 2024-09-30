@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ilya Fralkou - Gallery 2</title>
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+    <!-- Styles -->
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="styles/aboutPageStyle.css" rel="stylesheet" type="text/css" />
+    <link href="css/galeria.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- Style i skrypty do lightbox -->
+    <link
+      rel="stylesheet"
+      href="css/lightbox.css"
+      type="text/css"
+      media="screen" />
+    <script type="text/javascript" src="js/prototype.js"></script>
+    <script
+      type="text/javascript"
+      src="js/scriptaculous.js?load=effects,builder"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    <!-- Header content -->
+    <header>
+      <div class="profileLogo">
+        <!-- Profile logo. Add a img tag in place of <span>. -->
+        <p class="logoPlaceholder">
+          <!-- <img src="logoImage.png" alt="sample logo"> --><span>LOGO</span>
+        </p>
+      </div>
+      <div class="profilePhoto">
+        <!-- Profile photo -->
+        <img src="images/profilephoto.png" alt="sample" />
+      </div>
+      <!-- Identity details -->
+      <section class="profileHeader">
+        <h1>ILYA FRALKOU</h1>
+        <h3>REALLY AWESOME FRONT-END DEVELOPER</h3>
+        <hr />
+        <p>
+          <span>Email :</span>
+          <a href="mailto:ilya-fralkou@outlook.com">ilya-fralkou@outlook.com</a>
+        </p>
+        <p>
+          <span>Website :</span>
+          <a href="https://www.dzmuh.com/">www.dzmuh.com</a>
+        </p>
+        <p>
+          <span>Phone :</span> <a href="tel:+48500528736">(48) 500 528 736</a>
+        </p>
+      </section>
+      <!-- Links to Social network accounts -->
+      <aside class="socialNetworkNavBar">
+        <div class="socialNetworkNav">
+          <!-- Add a Anchor tag with nested img tag here -->
+          <img src="images/social.png" alt="sample" />
+        </div>
+        <div class="socialNetworkNav">
+          <!-- Add a Anchor tag with nested img tag here -->
+          <img src="images/social.png" alt="sample" />
+        </div>
+        <div class="socialNetworkNav">
+          <!-- Add a Anchor tag with nested img tag here -->
+          <img src="images/social.png" alt="sample" />
+        </div>
+        <div class="socialNetworkNav">
+          <!-- Add a Anchor tag with nested img tag here -->
+          <img src="images/social.png" alt="sample" />
+        </div>
+      </aside>
+      <nav>
+        <ul class="mainmenu">
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="gallery2.html">Gallery 2</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h3>Galeria zdjęć</h3>
+    <section class="galeria">
+      <!-- to jest grupa pierwsza fotografi powiazana - mozliwosc przelaczania na kolejne zdjecie z grupy -->
+      <a href="images/big/foto1.jpg" rel="lightbox[grupa1]" title="ciasto nr 1"
+        ><img src="images/mini/foto1.jpg"
+      /></a>
+      <a href="images/big/foto2.jpg" rel="lightbox[grupa1]" title="ciasto nr 2"
+        ><img src="images/mini/foto2.jpg"
+      /></a>
+      <a href="images/big/foto3.jpg" rel="lightbox[grupa1]" title="ciasto nr 3"
+        ><img src="images/mini/foto3.jpg"
+      /></a>
+      <a href="images/big/foto4.jpg" rel="lightbox[grupa1]" title="ciasto nr 4"
+        ><img src="images/mini/foto4.jpg"
+      /></a>
+      <a href="images/big/foto5.jpg" rel="lightbox[grupa1]" title="ciasto nr 5"
+        ><img src="images/mini/foto5.jpg"
+      /></a>
+      <a href="images/big/foto6.jpg" rel="lightbox[grupa1]" title="ciasto nr 6"
+        ><img src="images/mini/foto6.jpg"
+      /></a>
+    </section>
+    <section class="galeria">
+      <a href="images/big/foto7.jpg" rel="lightbox[grupa2]" title="ciasto nr 7"
+        ><img src="images/mini/foto7.jpg"
+      /></a>
+      <a href="images/big/foto8.jpg" rel="lightbox[grupa2]" title="ciasto nr 8"
+        ><img src="images/mini/foto8.jpg"
+      /></a>
+      <a href="images/big/foto9.jpg" rel="lightbox[grupa2]" title="ciasto nr 9"
+        ><img src="images/mini/foto9.jpg"
+      /></a>
+      <a
+        href="images/big/foto10.jpg"
+        rel="lightbox[grupa2]"
+        title="ciasto nr 10"
+        ><img src="images/mini/foto10.jpg"
+      /></a>
+      <a
+        href="images/big/foto11.jpg"
+        rel="lightbox[grupa2]"
+        title="ciasto nr 11"
+        ><img src="images/mini/foto11.jpg"
+      /></a>
+      <a
+        href="images/big/foto12.jpg"
+        rel="lightbox[grupa2]"
+        title="ciasto nr 12"
+        ><img src="images/mini/foto12.jpg"
+      /></a>
+    </section>
+  </body>
+</html>
