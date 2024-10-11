@@ -1,61 +1,73 @@
 /* CSS Document */
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .roboto {
-	&-thin {
-		font-family: "Roboto", sans-serif;
-		font-weight: 100;
-		font-style: normal;
+    &-thin {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+
         &-italic {
             font-family: "Roboto", sans-serif;
             font-weight: 100;
             font-style: italic;
         }
-	}
-	&-light {
-		font-family: "Roboto", sans-serif;
-		font-weight: 300;
-		font-style: normal;
+    }
+
+    &-light {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+
         &-italic {
             font-family: "Roboto", sans-serif;
             font-weight: 300;
             font-style: italic;
         }
-	}
+    }
+
     &-regular {
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-style: normal;
+
         &-italic {
             font-family: "Roboto", sans-serif;
             font-weight: 400;
             font-style: italic;
         }
     }
+
     &-medium {
         font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-style: normal;
+
         &-italic {
             font-family: "Roboto", sans-serif;
             font-weight: 500;
             font-style: italic;
         }
     }
+
     &-bold {
         font-family: "Roboto", sans-serif;
         font-weight: 700;
         font-style: normal;
+
         &-italic {
             font-family: "Roboto", sans-serif;
             font-weight: 700;
             font-style: italic;
         }
     }
+
     &-black {
         font-family: "Roboto", sans-serif;
         font-weight: 900;
         font-style: normal;
+
         &-italic {
             font-family: "Roboto", sans-serif;
             font-weight: 900;
@@ -68,15 +80,19 @@
 .bi {
     width: 64px;
     height: 64px;
+
     &-facebook {
         color: hsl(217, 100%, 52%);
     }
+
     &-twitter-x {
         color: black;
     }
+
     &-instagram {
         color: hsl(321, 92%, 60%);
     }
+
     &-linkedin {
         color: hsl(210, 90%, 40%);
     }
@@ -84,33 +100,34 @@
 
 /* Global Styles */
 body {
-	margin-left: auto;
-	margin-right: auto;
-	width: 92%;
-	max-width: 960px;
-	padding-left: 2.275%;
-	padding-right: 2.275%;
-	font-family: 'Roboto', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 92%;
+    max-width: 960px;
+    padding-left: 2.275%;
+    padding-right: 2.275%;
+    font-family: 'Roboto', sans-serif;
 }
+
 hr {
-	background-color: rgba(208,207,207,1.00);
-	height: 1px;
+    background-color: rgba(208, 207, 207, 1.00);
+    height: 1px;
 }
 
 /* Header */
 header {
-	text-align: center;
-	display: block;
-    
+    text-align: center;
+    display: block;
+
     .mainmenu {
         font-family: 'Montserrat', sans-serif;
-        background-color: rgba(208,207,207,1.00);
+        background-color: rgba(208, 207, 207, 1.00);
         overflow: auto;
         font-style: normal;
         font-weight: 400;
         display: block;
         clear: both;
-        
+
         .logo {
             width: 28%;
             float: left;
@@ -119,9 +136,9 @@ header {
             font-size: 3em;
             font-weight: 700;
             line-height: 53px;
-            color: rgba(255,255,255,1.00);
+            color: rgba(255, 255, 255, 1.00);
         }
-        
+
         nav {
             text-align: right;
             padding-top: 12px;
@@ -129,8 +146,8 @@ header {
             padding-right: 2%;
             width: 68%;
             float: left;
-            color: rgba(146,146,146,1.00);
-            
+            color: rgba(146, 146, 146, 1.00);
+
             a {
                 font-size: 1.2em;
                 padding-right: 2%;
@@ -141,32 +158,37 @@ header {
             }
         }
     }
+
     .profilePhoto {
-        background-color: rgba(237,237,237,1.00);
+        background-color: rgba(237, 237, 237, 1.00);
         width: 259px;
         border-radius: 50%;
         height: 259px;
         clear: both;
     }
+
     .profileHeader {
         float: left;
+
         h1 {
             font-family: 'Montserrat', sans-serif;
-            color: rgba(146,146,146,1.00);
+            color: rgba(146, 146, 146, 1.00);
             font-size: 30px;
             font-weight: 700;
             line-height: 24px;
         }
+
         h3 {
             font-family: sans-serif;
-            color: rgba(146,146,146,1.00);
+            color: rgba(146, 146, 146, 1.00);
             font-size: 16px;
             font-weight: 700;
             line-height: 24px;
         }
+
         p {
             font-family: sans-serif;
-            color: rgba(146,146,146,1.00);
+            color: rgba(146, 146, 146, 1.00);
             font-size: 14px;
             font-weight: 400;
             line-height: 1.8;
@@ -174,18 +196,21 @@ header {
             text-align: justify;
         }
     }
+
     .socialNetworkNavBar {
         display: block;
         margin-top: 2em;
         clear: both;
         padding-top: 1em;
-        
-        .socialNetworkNav { 
+
+        .socialNetworkNav {
             cursor: pointer;
+
             svg {
                 width: 32px;
                 height: 32px;
             }
+
             img:hover {
                 opacity: 0.5;
             }
@@ -196,44 +221,43 @@ header {
 /* Main Content sections */
 .mainContent {
     display: block;
+
     .section1 {
         display: block;
-        
+
         .section1Content {
             font-size: 14px;
             font-weight: 100;
-            color: rgba(208,207,207,1.00);
-            
+
             span {
-                color: rgba(146,146,146,1.00);
+                color: rgba(146, 146, 146, 1.00);
             }
         }
     }
-    
+
     .section2 {
         .sectionContentTitle {
-            color: rgba(146,146,146,1.00);
             font-size: 18px;
             font-weight: 700;
         }
     }
-    
+
     .externalResourcesNav {
         .externalResources {
-            background-color: rgba(208,207,207,1.00);
+            background-color: rgba(208, 207, 207, 1.00);
             display: inline-block;
             text-align: center;
             margin-top: 0px;
             padding-top: 3%;
             cursor: pointer;
-            
+
             &:hover {
-                background-color: rgba(153,153,153,1.00);
+                background-color: rgba(153, 153, 153, 1.00);
             }
-            
+
             a {
                 font-family: 'Montserrat', sans-serif;
-                color: rgba(255,255,255,1.00);
+                color: rgba(255, 255, 255, 1.00);
                 font-size: 14px;
                 font-weight: 400;
                 line-height: 18px;
@@ -242,34 +266,48 @@ header {
         }
     }
 }
-.section1, .section2 {
+
+.section1,
+.section2 {
     .sectionTitle {
         font-family: 'Montserrat', sans-serif;
-        color: rgba(146,146,146,1.00);
         font-size: 18px;
         font-weight: 700;
         text-transform: uppercase;
     }
+
     .sectionTitleRule {
         margin: 0 3% 0 0;
         float: left;
         clear: both;
     }
+
     .sectionTitleRule2 {
-        background-color: rgba(208,207,207,1.00);
+        background-color: rgba(208, 207, 207, 1.00);
         height: 1px;
         padding: 0px;
+    }
+
+    .sectionContentSubTitle {
+        color: rgba(68, 67, 67, 1.00);
+    }
+
+    .sectionContentTitle {
+        color: rgba(146, 146, 146, 1.00);
+    }
+
+    .sectionContent {
+        color: rgba(146, 146, 146, 1.00);
     }
 }
 
 .section2 {
     .sectionContentSubTitle {
-        color: rgba(68,67,67,1.00);
         font-size: 14px;
         font-weight: 400;
     }
+
     .sectionContent {
-        color: rgba(146,146,146,1.00);
         font-size: 14px;
         font-weight: 400;
         line-height: 1.8;
@@ -277,10 +315,10 @@ header {
 }
 
 .stretch {
-	content: '';
-	display: inline-block;
-	margin-left: 2%;
-	margin-right: 2%;
+    content: '';
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 /* Footer */
@@ -289,24 +327,24 @@ footer {
         font-family: sans-serif;
         font-size: 14px;
         line-height: 18px;
-        color: rgba(104,103,103,1.00);
+        color: rgba(104, 103, 103, 1.00);
         font-weight: 700;
-        
+
         span {
-            color: rgba(181,178,178,1.00);
+            color: rgba(181, 178, 178, 1.00);
             font-weight: 400;
         }
     }
-    
+
     .footerNote {
         font-family: sans-serif;
         font-size: 14px;
         line-height: 18px;
-        color: rgba(104,103,103,1.00);
+        color: rgba(104, 103, 103, 1.00);
         font-weight: 700;
-        
+
         span {
-            color: rgba(181,178,178,1.00);
+            color: rgba(181, 178, 178, 1.00);
             font-weight: 400;
         }
     }
@@ -314,46 +352,63 @@ footer {
 
 /* Media query for Mobile devices*/
 @media screen and (max-width:480px) {
+    body {
+        width: 96%;
+    }
+
     /* Header */
     header {
         .mainmenu {
             .logo {
-                width: 96%;
+                width: 98%;
                 margin-left: 2%;
             }
+
             nav {
                 text-align: center;
-                background-color: rgba(255,255,255,1.00);
+                background-color: rgba(255, 255, 255, 1.00);
                 width: 98%;
             }
         }
     }
+
+    /* Footer */
+    footer {
+        display: block;
+        text-align: center;
+        font-family: sans-serif;
+    }
 }
+
 @media only screen and (min-width : 285px) and (max-width : 480px) {
+
     /* Header */
     header {
         width: 100%;
         float: none;
-        
+
         .mainmenu {}
+
         .profilePhoto {
             display: inline-block;
         }
+
         .profileHeader {
             text-align: center;
             margin-top: 10%;
-            
+
             p {
                 text-align: justify;
             }
         }
+
         .socialNetworkNavBar {
             text-align: center;
             display: block;
             margin-top: 60px;
             clear: both;
             margin-bottom: 15%;
-            
+
             .socialNetworkNav {
                 width: 60px;
                 height: 60px;
@@ -362,26 +417,81 @@ footer {
             }
         }
     }
+
+    .mainContent {
+        .section1 {
+            text-align: center;
+            margin-bottom: 10%;
+
+            .section1Content {
+                display: inline-block;
+                text-align: left;
+                font-family: sans-serif;
+                text-align: justify;
+            }
+        }
+
+        .section2 {
+            display: block;
+            text-align: center;
+        }
+
+        .externalResourcesNav {
+            margin-bottom: 10%;
+
+            .externalResources {
+                width: 100%;
+                height: 35px;
+            }
+        }
+    }
+
+    .section1,
+    .section2 {
+        .section1Title {
+            text-align: center;
+        }
+
+        .sectionTitleRule {
+            width: 100%;
+        }
+
+        .sectionTitleRule2 {
+            display: none;
+        }
+    }
+
+    .section2 {
+        .section2Content {
+            margin-top: 10%;
+            text-align: justify;
+            margin-bottom: 10%;
+        }
+    }
 }
 
 /* Media Query for Tablets */
 @media only screen and (min-width : 481px) and (max-width : 1024px) {
+
     /* Header */
     header {
         width: 100%;
         float: none;
-        
+
         .mainmenu {}
+
         .profilePhoto {
             float: left;
             clear: both;
             margin-right: 3%;
             margin-top: 2%;
         }
+
         .profileHeader {
             text-align: left;
             margin-top: 1%;
         }
+
         .socialNetworkNavBar {
             .socialNetworkNav {
                 width: 74px;
@@ -389,27 +499,101 @@ footer {
                 display: inline-block;
                 margin-right: 23px;
             }
+        }
+    }
+
+    .section1,
+    .section2 {
+        .section1Title {
+            text-align: center;
+        }
+
+        .sectionTitleRule {
+            width: 100%;
+        }
+
+        .sectionTitleRule2 {
+            display: none;
+        }
+    }
+
+    .mainContent {
+        .section1 {
+            .section1Content {
+                display: block;
+                margin: 0% 0% 0% 20%;
+                font-family: sans-serif;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+        }
+
+        .section2 {
+            clear: both;
+
+            .section2Content {
+                padding: 0px;
+                margin-left: 20%;
+                font-family: sans-serif;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+        }
+
+        .externalResourcesNav {
+            margin-left: 20%;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            text-align: center;
+            padding-top: 0px;
+            clear: both;
+
+            .externalResources {
+                width: 199px;
+                height: 48px;
+                margin-top: 5%;
+            }
+        }
+    }
+
+    /* Footer */
+    footer {
+        .footerDisclaimer {
+            float: left;
+            margin-left: 3%;
+            font-family: sans-serif;
+        }
+
+        .footerNote {
+            float: right;
+            margin-right: 3%;
+            font-family: sans-serif;
         }
     }
 }
 
 /* Desktops and laptops  */
 @media only screen and (min-width:1025px) {
+
     /* Header */
     header {
         .mainmenu {}
+
         .profilePhoto {
             float: left;
             clear: both;
             margin-right: 3%;
             margin-top: 2%;
         }
+
         .profileHeader {
             text-align: left;
             padding-top: 2%;
         }
+
         .socialNetworkNavBar {
             display: block;
+
             .socialNetworkNav {
                 width: 74px;
                 height: 74px;
@@ -418,15 +602,16 @@ footer {
             }
         }
     }
-    
+
     /* Main content sections */
-    
-    .section1, .section2 {
+
+    .section1,
+    .section2 {
         .sectionTitleRule {
             width: 22.5%;
         }
     }
-    
+
     .mainContent {
         .section1 {
             .section1Content {
@@ -438,29 +623,31 @@ footer {
                 font-family: sans-serif;
             }
         }
+
         .section2 {
             clear: both;
-            
+
             .section2Content {
                 padding: 0px;
                 margin-left: 26%;
                 font-family: sans-serif;
             }
         }
+
         .externalResourcesNav {
             margin-top: 40px;
             margin-bottom: 40px;
             text-align: center;
             padding-top: 0px;
             clear: both;
-            
+
             .externalResources {
                 width: 199px;
                 height: 48px;
             }
         }
     }
-    
+
     /* Footer */
     footer {
         .footerDisclaimer {
@@ -468,7 +655,7 @@ footer {
             margin-left: 3%;
             font-family: sans-serif;
         }
-        
+
         .footerNote {
             float: right;
             margin-right: 3%;
