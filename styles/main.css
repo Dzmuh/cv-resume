@@ -1,81 +1,104 @@
 /* CSS Document */
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-/* line 6, main.scss */
+/* line 5, main.scss */
 .roboto-thin {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-style: normal;
 }
-/* line 10, main.scss */
+/* line 9, main.scss */
 .roboto-thin-italic {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-style: italic;
 }
-/* line 16, main.scss */
+/* line 15, main.scss */
 .roboto-light {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
-/* line 20, main.scss */
+/* line 19, main.scss */
 .roboto-light-italic {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: italic;
 }
-/* line 26, main.scss */
+/* line 25, main.scss */
 .roboto-regular {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-/* line 30, main.scss */
+/* line 29, main.scss */
 .roboto-regular-italic {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: italic;
 }
-/* line 36, main.scss */
+/* line 35, main.scss */
 .roboto-medium {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
-/* line 40, main.scss */
+/* line 39, main.scss */
 .roboto-medium-italic {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: italic;
 }
-/* line 46, main.scss */
+/* line 45, main.scss */
 .roboto-bold {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
-/* line 50, main.scss */
+/* line 49, main.scss */
 .roboto-bold-italic {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: italic;
 }
-/* line 56, main.scss */
+/* line 55, main.scss */
 .roboto-black {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-style: normal;
 }
-/* line 60, main.scss */
+/* line 59, main.scss */
 .roboto-black-italic {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-style: italic;
 }
 
+/* Icons */
+/* line 68, main.scss */
+.bi {
+  width: 64px;
+  height: 64px;
+}
+/* line 71, main.scss */
+.bi-facebook {
+  color: #0a68ff;
+}
+/* line 74, main.scss */
+.bi-twitter-x {
+  color: black;
+}
+/* line 77, main.scss */
+.bi-instagram {
+  color: #f73bb5;
+}
+/* line 80, main.scss */
+.bi-linkedin {
+  color: #0a66c2;
+}
+
 /* Global Styles */
-/* line 69, main.scss */
+/* line 86, main.scss */
 body {
   margin-left: auto;
   margin-right: auto;
@@ -86,35 +109,59 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 78, main.scss */
+/* line 95, main.scss */
 hr {
   background-color: #d0cfcf;
   height: 1px;
 }
 
 /* Header */
-/* line 83, main.scss */
+/* line 101, main.scss */
 header {
   text-align: center;
   display: block;
 }
-/* line 87, main.scss */
-header .profileLogo .logoPlaceholder {
-  background-color: #d0cfcf;
-  width: 187px;
-  text-align: center;
-}
-/* line 94, main.scss */
-header .logoPlaceholder span {
-  width: 80px;
-  height: 22px;
+/* line 105, main.scss */
+header .mainmenu {
   font-family: 'Montserrat', sans-serif;
-  color: white;
-  font-size: 30px;
+  background-color: #d0cfcf;
+  overflow: auto;
+  font-style: normal;
+  font-weight: 400;
+  display: block;
+  clear: both;
+}
+/* line 114, main.scss */
+header .mainmenu .logo {
+  width: 28%;
+  float: left;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 3em;
   font-weight: 700;
   line-height: 53px;
+  color: white;
 }
-/* line 104, main.scss */
+/* line 125, main.scss */
+header .mainmenu nav {
+  text-align: right;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 2%;
+  width: 68%;
+  float: left;
+  color: #929292;
+}
+/* line 134, main.scss */
+header .mainmenu nav a {
+  font-size: 1.2em;
+  padding-right: 2%;
+  padding-top: 0.8em;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 144, main.scss */
 header .profilePhoto {
   background-color: #ededed;
   width: 259px;
@@ -122,7 +169,11 @@ header .profilePhoto {
   height: 259px;
   clear: both;
 }
-/* line 112, main.scss */
+/* line 151, main.scss */
+header .profileHeader {
+  float: left;
+}
+/* line 153, main.scss */
 header .profileHeader h1 {
   font-family: 'Montserrat', sans-serif;
   color: #929292;
@@ -130,7 +181,7 @@ header .profileHeader h1 {
   font-weight: 700;
   line-height: 24px;
 }
-/* line 119, main.scss */
+/* line 160, main.scss */
 header .profileHeader h3 {
   font-family: sans-serif;
   color: #929292;
@@ -138,7 +189,7 @@ header .profileHeader h3 {
   font-weight: 700;
   line-height: 24px;
 }
-/* line 126, main.scss */
+/* line 167, main.scss */
 header .profileHeader p {
   font-family: sans-serif;
   color: #929292;
@@ -146,40 +197,306 @@ header .profileHeader p {
   font-weight: 400;
   line-height: 1.8;
   overflow-y: auto;
+  text-align: justify;
 }
-/* line 135, main.scss */
+/* line 177, main.scss */
 header .socialNetworkNavBar {
-  text-align: center;
   display: block;
-  margin-top: 60px;
+  margin-top: 2em;
   clear: both;
+  padding-top: 1em;
 }
-/* line 140, main.scss */
+/* line 183, main.scss */
 header .socialNetworkNavBar .socialNetworkNav {
-  border-radius: 50%;
   cursor: pointer;
 }
-/* line 143, main.scss */
+/* line 185, main.scss */
+header .socialNetworkNavBar .socialNetworkNav svg {
+  width: 32px;
+  height: 32px;
+}
+/* line 189, main.scss */
 header .socialNetworkNavBar .socialNetworkNav img:hover {
   opacity: 0.5;
 }
-/* line 148, main.scss */
-header .mainmenu {
-  list-style: none;
-}
-/* line 150, main.scss */
-header .mainmenu ul {
-  list-style: none;
-}
 
 /* Main Content sections */
-/* line 157, main.scss */
+/* line 197, main.scss */
 .mainContent {
   display: block;
 }
-/* line 159, main.scss */
+/* line 199, main.scss */
 .mainContent .section1 {
   display: block;
+}
+/* line 202, main.scss */
+.mainContent .section1 .section1Content {
+  font-size: 14px;
+  font-weight: 100;
+  color: #d0cfcf;
+}
+/* line 207, main.scss */
+.mainContent .section1 .section1Content span {
+  color: #929292;
+}
+/* line 214, main.scss */
+.mainContent .section2 .sectionContentTitle {
+  color: #929292;
+  font-size: 18px;
+  font-weight: 700;
+}
+/* line 222, main.scss */
+.mainContent .externalResourcesNav .externalResources {
+  background-color: #d0cfcf;
+  display: inline-block;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 3%;
+  cursor: pointer;
+}
+/* line 230, main.scss */
+.mainContent .externalResourcesNav .externalResources:hover {
+  background-color: #999999;
+}
+/* line 234, main.scss */
+.mainContent .externalResourcesNav .externalResources a {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+/* line 246, main.scss */
+.section1 .sectionTitle, .section2 .sectionTitle {
+  font-family: 'Montserrat', sans-serif;
+  color: #929292;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* line 253, main.scss */
+.section1 .sectionTitleRule, .section2 .sectionTitleRule {
+  margin: 0 3% 0 0;
+  float: left;
+  clear: both;
+}
+/* line 258, main.scss */
+.section1 .sectionTitleRule2, .section2 .sectionTitleRule2 {
+  background-color: #d0cfcf;
+  height: 1px;
+  padding: 0px;
+}
+
+/* line 266, main.scss */
+.section2 .sectionContentSubTitle {
+  color: #444343;
+  font-size: 14px;
+  font-weight: 400;
+}
+/* line 271, main.scss */
+.section2 .sectionContent {
+  color: #929292;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* line 279, main.scss */
+.stretch {
+  content: '';
+  display: inline-block;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/* Footer */
+/* line 288, main.scss */
+footer .footerDisclaimer {
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #686767;
+  font-weight: 700;
+}
+/* line 295, main.scss */
+footer .footerDisclaimer span {
+  color: #b5b2b2;
+  font-weight: 400;
+}
+/* line 301, main.scss */
+footer .footerNote {
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #686767;
+  font-weight: 700;
+}
+/* line 308, main.scss */
+footer .footerNote span {
+  color: #b5b2b2;
+  font-weight: 400;
+}
+
+/* Media query for Mobile devices*/
+@media screen and (max-width: 480px) {
+  /* Header */
+  /* line 320, main.scss */
+  header .mainmenu .logo {
+    width: 96%;
+    margin-left: 2%;
+  }
+  /* line 324, main.scss */
+  header .mainmenu nav {
+    text-align: center;
+    background-color: white;
+    width: 98%;
+  }
+}
+@media only screen and (min-width: 285px) and (max-width: 480px) {
+  /* Header */
+  /* line 334, main.scss */
+  header {
+    width: 100%;
+    float: none;
+  }
+  /* line 339, main.scss */
+  header .profilePhoto {
+    display: inline-block;
+  }
+  /* line 342, main.scss */
+  header .profileHeader {
+    text-align: center;
+    margin-top: 10%;
+  }
+  /* line 346, main.scss */
+  header .profileHeader p {
+    text-align: justify;
+  }
+  /* line 350, main.scss */
+  header .socialNetworkNavBar {
+    text-align: center;
+    display: block;
+    margin-top: 60px;
+    clear: both;
+    margin-bottom: 15%;
+  }
+  /* line 357, main.scss */
+  header .socialNetworkNavBar .socialNetworkNav {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin-right: 23px;
+  }
+}
+/* Media Query for Tablets */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  /* Header */
+  /* line 370, main.scss */
+  header {
+    width: 100%;
+    float: none;
+  }
+  /* line 375, main.scss */
+  header .profilePhoto {
+    float: left;
+    clear: both;
+    margin-right: 3%;
+    margin-top: 2%;
+  }
+  /* line 381, main.scss */
+  header .profileHeader {
+    text-align: left;
+    margin-top: 1%;
+  }
+  /* line 386, main.scss */
+  header .socialNetworkNavBar .socialNetworkNav {
+    width: 74px;
+    height: 74px;
+    display: inline-block;
+    margin-right: 23px;
+  }
+}
+/* Desktops and laptops  */
+@media only screen and (min-width: 1025px) {
+  /* Header */
+  /* line 401, main.scss */
+  header .profilePhoto {
+    float: left;
+    clear: both;
+    margin-right: 3%;
+    margin-top: 2%;
+  }
+  /* line 407, main.scss */
+  header .profileHeader {
+    text-align: left;
+    padding-top: 2%;
+  }
+  /* line 411, main.scss */
+  header .socialNetworkNavBar {
+    display: block;
+  }
+  /* line 413, main.scss */
+  header .socialNetworkNavBar .socialNetworkNav {
+    width: 74px;
+    height: 74px;
+    display: inline-block;
+    margin-right: 23px;
+  }
+
+  /* Main content sections */
+  /* line 425, main.scss */
+  .section1 .sectionTitleRule, .section2 .sectionTitleRule {
+    width: 22.5%;
+  }
+
+  /* line 432, main.scss */
+  .mainContent .section1 .section1Content {
+    display: block;
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-left: 26%;
+    margin-bottom: 0%;
+    font-family: sans-serif;
+  }
+  /* line 441, main.scss */
+  .mainContent .section2 {
+    clear: both;
+  }
+  /* line 444, main.scss */
+  .mainContent .section2 .section2Content {
+    padding: 0px;
+    margin-left: 26%;
+    font-family: sans-serif;
+  }
+  /* line 450, main.scss */
+  .mainContent .externalResourcesNav {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    padding-top: 0px;
+    clear: both;
+  }
+  /* line 457, main.scss */
+  .mainContent .externalResourcesNav .externalResources {
+    width: 199px;
+    height: 48px;
+  }
+
+  /* Footer */
+  /* line 466, main.scss */
+  footer .footerDisclaimer {
+    float: left;
+    margin-left: 3%;
+    font-family: sans-serif;
+  }
+  /* line 472, main.scss */
+  footer .footerNote {
+    float: right;
+    margin-right: 3%;
+    font-family: sans-serif;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
